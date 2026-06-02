@@ -9,9 +9,9 @@
     {
       "@id": "./",
       "@type": "Dataset",
-      "name": "Testdataset",
+      "name": "Roger's Testdatensatz",
       "datePublished": "2026-05-19",
-      "description": "Beschreibung Testdataset",
+      "description": "Beschreibung meines Datensatzes",
       "hasPart": [
         {
           "@id": "data/dataset.ttl"
@@ -56,10 +56,10 @@
           "@id": "sources/V_Roles.csv"
         },
         {
-          "@id": "sources/geonames_geonames_8daeaa7e-b942-4146-a990-88b8d1066ec2.csv"
+          "@id": "sources/geonames_geonames_ffa59aaf-19ce-495d-9550-78288c16c8d4.csv"
         },
         {
-          "@id": "sources/lat-lng-to-wkt_transform_44ec09d9-c478-41ae-87a7-c5bcab83ad74.csv"
+          "@id": "sources/lat-lng-to-wkt_transform_e617853e-dfdc-44ef-a7b4-d04524fe232e.csv"
         },
         {
           "@id": "mapping/mapping.rml.ttl"
@@ -68,9 +68,14 @@
           "@id": "README.md"
         }
       ],
-      "creator": {
-        "@id": "https://orcid.org/0000-0001-6259-4068"
-      },
+      "creator": [
+        {
+          "@id": "https://orcid.org/0000-0001-6259-4068"
+        },
+        {
+          "@id": "urn:ardmp:metadata:ed1e8127-a94f-4947-9e2f-ccb672737df6"
+        }
+      ],
       "license": {
         "@id": "http://creativecommons.org/licenses/by/4.0/"
       }
@@ -90,7 +95,7 @@
       "@id": "data/dataset.ttl",
       "@type": "File",
       "name": "Generated RDF dataset",
-      "description": "Turtle serialisation produced from the mapping (60 subjects, 221 triples).",
+      "description": "Turtle serialisation produced from the mapping (60 subjects, 226 triples).",
       "encodingFormat": "text/turtle"
     },
     {
@@ -206,16 +211,16 @@
       "encodingFormat": "text/csv"
     },
     {
-      "@id": "sources/geonames_geonames_8daeaa7e-b942-4146-a990-88b8d1066ec2.csv",
+      "@id": "sources/geonames_geonames_ffa59aaf-19ce-495d-9550-78288c16c8d4.csv",
       "@type": "File",
-      "name": "geonames geonames:8daeaa7e-b942-4146-a990-88b8d1066ec2",
+      "name": "geonames geonames:ffa59aaf-19ce-495d-9550-78288c16c8d4",
       "description": "geonames result table (4 rows). Includes exported row identifiers for subject templates.",
       "encodingFormat": "text/csv"
     },
     {
-      "@id": "sources/lat-lng-to-wkt_transform_44ec09d9-c478-41ae-87a7-c5bcab83ad74.csv",
+      "@id": "sources/lat-lng-to-wkt_transform_e617853e-dfdc-44ef-a7b4-d04524fe232e.csv",
       "@type": "File",
-      "name": "lat-lng-to-wkt transform:44ec09d9-c478-41ae-87a7-c5bcab83ad74",
+      "name": "lat-lng-to-wkt transform:e617853e-dfdc-44ef-a7b4-d04524fe232e",
       "description": "lat-lng-to-wkt table (4 rows). Includes exported row identifiers for subject templates.",
       "encodingFormat": "text/csv"
     },
@@ -239,6 +244,11 @@
       "@id": "https://orcid.org/0000-0001-6259-4068",
       "@type": "Person",
       "name": "Roger"
+    },
+    {
+      "@id": "urn:ardmp:metadata:ed1e8127-a94f-4947-9e2f-ccb672737df6",
+      "@type": "Organization",
+      "name": "ULB Darmstadt"
     }
   ]
 }

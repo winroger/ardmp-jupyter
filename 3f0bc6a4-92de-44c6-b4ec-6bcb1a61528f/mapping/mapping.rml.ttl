@@ -10,8 +10,8 @@
 @prefix rml: <http://semweb.mmlab.be/ns/rml#>.
 @prefix ql: <http://semweb.mmlab.be/ns/ql#>.
 @prefix tri: <http://example.org/mapping/triples-map/>.
-@prefix ge: <http://www.opengis.net/ont/geosparql#>.
 @prefix pro: <https://w3id.org/nfdi4ing/profiles/>.
+@prefix ge: <http://www.opengis.net/ont/geosparql#>.
 @prefix pow: <http://www.w3.org/2007/05/powder-s#>.
 @prefix gnd: <https://d-nb.info/standards/elementset/gnd#>.
 @prefix dcat: <http://www.w3.org/ns/dcat#>.
@@ -24,19 +24,24 @@ tri:https-w3id-org-nfdi4ing-profiles-1cf39480-24ef-41db-a5b3-070601a05cc3-airtab
             [
                 rr:objectMap [ rml:reference "IRI"; rr:termType rr:IRI ];
                 rr:predicate dct:identifier
+            ],
+            [
+                rr:objectMap
+                [ rml:reference "geonames id"; rr:datatype xsd:string ];
+                rr:predicate pro:geonamesId
             ];
     rr:subjectMap
             [
                 rr:class dct:Location;
                 rr:template "http://example.org/Location/{_recordId}"
             ].
-tri:https-w3id-org-nfdi4ing-profiles-1cf39480-24ef-41db-a5b3-070601a05cc3-geonames-output-geonames-8daeaa7e-b942-4146-a990-88b8d1066ec2
+tri:https-w3id-org-nfdi4ing-profiles-1cf39480-24ef-41db-a5b3-070601a05cc3-geonames-output-geonames-ffa59aaf-19ce-495d-9550-78288c16c8d4
     a rr:TriplesMap;
     rml:logicalSource
             [
                 rml:referenceFormulation ql:CSV;
                 rml:source
-                    "sources/geonames_geonames_8daeaa7e-b942-4146-a990-88b8d1066ec2.csv"
+                    "sources/geonames_geonames_ffa59aaf-19ce-495d-9550-78288c16c8d4.csv"
             ];
     rr:predicateObjectMap
             [
@@ -48,11 +53,7 @@ tri:https-w3id-org-nfdi4ing-profiles-1cf39480-24ef-41db-a5b3-070601a05cc3-geonam
                         ];
                 rr:predicate ge:asWKT
             ],
-        [ rr:objectMap [ rml:reference "name" ]; rr:predicate rdfs:label ],
-            [
-                rr:objectMap [ rml:reference "id"; rr:datatype xsd:string ];
-                rr:predicate pro:geonamesId
-            ];
+        [ rr:objectMap [ rml:reference "name" ]; rr:predicate rdfs:label ];
     rr:subjectMap
             [
                 rr:class dct:Location;
@@ -88,6 +89,10 @@ tri:https-w3id-org-nfdi4ing-profiles-1f6323a9-b59b-4fb0-9f0f-63fd8ef9594a-airtab
                             rr:termType rr:IRI
                         ];
                 rr:predicate prov:qualifiedAttribution
+            ],
+            [
+                rr:objectMap [ rml:reference "CompletionYear" ];
+                rr:predicate gnd:dateOfProduction
             ],
             [
                 rr:objectMap [ rml:reference "Project Name" ];

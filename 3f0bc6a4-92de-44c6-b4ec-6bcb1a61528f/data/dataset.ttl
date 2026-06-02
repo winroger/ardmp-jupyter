@@ -1,18 +1,17 @@
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
-@prefix owl: <http://www.w3.org/2002/07/owl#>.
-@prefix xml: <http://www.w3.org/XML/1998/namespace>.
 @prefix dcterms: <http://purl.org/dc/terms/>.
 @prefix dc: <http://purl.org/dc/elements/1.1/>.
 @prefix dnb: <https://d-nb.info/standards/elementset/dnb#>.
 @prefix gndo: <https://d-nb.info/standards/elementset/gnd#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
 @prefix powder: <http://www.w3.org/2007/05/powder-s#>.
 @prefix prov: <http://www.w3.org/ns/prov#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix sh: <http://www.w3.org/ns/shacl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 @prefix aps: <https://w3id.org/nfdi4ing/profiles/>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 @prefix schema: <http://schema.org/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix dcat: <http://www.w3.org/ns/dcat#>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix dct: <http://purl.org/dc/terms/>.
@@ -28,20 +27,26 @@
 @prefix www: <https://www.geonames.org/>.
 @prefix ge: <http://www.opengis.net/ont/geosparql#>.
 @prefix class: <https://identifier.buildingsmart.org/uri/nbs/uniclass2015/1/class/>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
 
-<urn:ardmp:metadata:11792a1f-ac2f-4575-9e76-f11ba32cc3c0> dct:identifier "https://orcid.org/0000-0001-6259-4068";
+<urn:ardmp:metadata:3409b2fc-db9e-4953-97cc-2a81e3045ac8> dct:identifier "https://orcid.org/0000-0001-6259-4068";
     foaf:name "Roger";
     a foaf:Person.
-<urn:ardmp:metadata:146afedd-8285-4c5b-bbc2-847e6c58031a> a prov:Attribution;
-    prov:agent <urn:ardmp:metadata:11792a1f-ac2f-4575-9e76-f11ba32cc3c0>;
+<urn:ardmp:metadata:26607997-d76d-4c8d-bd6a-8f0a34d95f24> a prov:Attribution;
+    prov:agent <urn:ardmp:metadata:3409b2fc-db9e-4953-97cc-2a81e3045ac8>;
     dcat:hadRole <http://w3id.org/nfdi4ing/metadata4ing#DataCurator>.
 <urn:ardmp:metadata:dataset> a dcat:Dataset;
-    prov:qualifiedAttribution <urn:ardmp:metadata:146afedd-8285-4c5b-bbc2-847e6c58031a>;
+    prov:qualifiedAttribution <urn:ardmp:metadata:26607997-d76d-4c8d-bd6a-8f0a34d95f24>, <urn:ardmp:metadata:77c76386-d917-43ea-90dd-5b31283fc378>;
     dct:issued "2026-05-19"^^xsd:date;
     dct:license <http://creativecommons.org/licenses/by/4.0/>;
-    dct:description "Beschreibung Testdataset"@en;
-    dct:title "Testdataset"@en;
+    dct:description "Beschreibung meines Datensatzes"@en;
+    dct:title "Roger's Testdatensatz"@en;
     dct:conformsTo pro:4a5d4526-34d4-4b00-8f8f-4b13dd48e6d6.
+<urn:ardmp:metadata:ed1e8127-a94f-4947-9e2f-ccb672737df6> foaf:name "ULB Darmstadt";
+    a foaf:Organisation.
+<urn:ardmp:metadata:77c76386-d917-43ea-90dd-5b31283fc378> a prov:Attribution;
+    prov:agent <urn:ardmp:metadata:ed1e8127-a94f-4947-9e2f-ccb672737df6>;
+    dcat:hadRole <http://w3id.org/nfdi4ing/metadata4ing#ResearchGroup>.
 
 # ----- Generated RDF data -----
 
@@ -72,6 +77,7 @@ Bui:rec7UjeF9x51h6anB
     dct:spatial Loc:recWEcXAabUK5njnu;
     pow:describedby Res:recYNd9n8uvJKdADu;
     prov:qualifiedAttribution e:recfp51375qn8proi, e:recKOea6lke2BemFu;
+    gnd:dateOfProduction "2020";
     gnd:preferredName "FE Home Office".
 Bui:reccs67kxCv2yLwRV
     a gnd:BuildingOrMemorial;
@@ -81,6 +87,7 @@ Bui:reccs67kxCv2yLwRV
         e:recBBbD616ywCzwdK, e:recCg9b03qyTwprUE, e:recNatjTdXbWGm9oP,
         e:recNKGOc4ABliCyyq, e:recqqg9hRlNLclOoE, e:recR9yLi1QC6grXGH,
         e:recTcB7BaFJEOKPwz;
+    gnd:dateOfProduction "2017";
     gnd:preferredName "Brock Commons".
 Bui:recn7wUEoLSRAfIMy
     a gnd:BuildingOrMemorial;
@@ -90,12 +97,14 @@ Bui:recn7wUEoLSRAfIMy
     prov:qualifiedAttribution
         e:recdlvZtMCwlYbOpj, e:recLv4VYtK7qS4VBS, e:reco69Qf0RO2pPgUH,
         e:rectt9G6bCyvsqgwJ;
+    gnd:dateOfProduction "2019";
     gnd:preferredName "6x6".
 Bui:recp2pP8VvFDXtsh6
     a gnd:BuildingOrMemorial;
     dct:spatial Loc:reccTlRYeeXFZYkCr;
     pow:describedby Res:reckfyW9Sw2GIuPPO, Res:recmv1erXo3YztvtU;
     prov:qualifiedAttribution e:reckLwHrjgRAacMdV;
+    gnd:dateOfProduction "2021";
     gnd:preferredName "Adidas North American Headquarters GOLD".
 Bui:recyvoJPe0b9sbx1G
     a gnd:BuildingOrMemorial;
@@ -103,6 +112,7 @@ Bui:recyvoJPe0b9sbx1G
     pow:describedby
     Res:recOO7Vylqc5VeDva, Res:recPBWTCXdakQPzum, Res:rectmJfPMwTpeaows;
     prov:qualifiedAttribution e:reci6W0ZSA8fUcK5I, e:recMyaoL2mMXihJ0q;
+    gnd:dateOfProduction "2022";
     gnd:preferredName "Port Plus Obayashi Yokohama Training Center ".
 e:recBBbD616ywCzwdK
     a pro:e65fc010-5fe6-4d74-9333-8601c31dde5d;

@@ -1,7 +1,7 @@
-# Testdataset
+# Roger's Testdatensatz
 
 This bundle is an [**RO-Crate 1.2**](https://w3id.org/ro/crate/1.2) packaged by
-**Architectural RDM-Pipeline** on 2026-05-19T10:07:06.297Z.
+**Architectural RDM-Pipeline** on 2026-05-19T07:22:34.937Z.
 
 ## Contents
 
@@ -10,4 +10,4 @@ This bundle is an [**RO-Crate 1.2**](https://w3id.org/ro/crate/1.2) packaged by
 - `sources/` — 8 source table(s) (`text/csv`)
 - `data/dataset.ttl` — generated RDF graph
 - `mapping/mapping.rml.ttl` — RML mapping export
-- Includes 17 mapping edge(s) reflected in the exported RML
+- Includes 18 mapping edge(s) reflected in the exported RML
